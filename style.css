@@ -1,0 +1,236 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Background.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;  
+}
+
+
+a{
+	text-decoration: none;
+}
+
+nav{
+	flex: 1;
+	text-align: left;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 60px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+
+.cool-link::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+
+.cool-link:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col1{
+	flex-basis: 50%;
+	transform: translateY(-100px);
+}
+
+.col2{
+	flex-basis: 50%;
+	padding-left: 150px;
+}
+
+h1{
+	color: #fff;
+	font-size: 100px;
+}
+
+p{
+	color: #fff;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+
+button{
+	position: absolute;
+	top: 50%
+	left:50%;
+	margin-top: 20px;
+}
+
+button{
+	background: none;
+	color: #fff;
+	width: 140px;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	font-size: 12px;
+	transition: .6s;
+	overflow: hidden;
+}
+
+
+button:focus{
+	outline: none;
+}
+
+button:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #fff;
+	color: #000;
+	width: 60px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skewX(-15deg);
+
+}
+
+
+
+button:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #fff;
+	color: #000;
+	width: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	filter: blur(30px);
+	transform: translateX(-100px) skewX(-15deg);
+}
+
+button:hover{
+	background: #fff;
+	color: #000;
+}
+
+button:hover:before{
+	transform: translateX(300px) skewX(-15deg);	
+	opacity: .6s;
+	transition: .7s;
+}
+
+
+button:hover:after{
+	transform: translateX(300px) skewX(-15deg);	
+	opacity: .6s;
+	transition: .7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+	
+}
+
+.card1{
+	background-image: url(1.jpg);
+}
+
+
+.card2{
+	background-image: url(2.jpg);
+}
+
+.card3{
+	background-image: url(3.jpg);
+}
+
+.card4{
+	background-image: url(4.jpg);
+}
+
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+}
+
+h4{
+	color: #fff;
+	transform: translateY(10px);
+}
+
+.card p{
+	text-shadow: 0 0 15px #000;
+
+}
+
+
+
+
